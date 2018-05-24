@@ -27,7 +27,7 @@ const Card = (props) => (
                 <div className="card__descriptionText">
                     {props.description}
                     <br/>
-                    {props.hint}
+                    {props.hint && <React.Fragment><br/>({props.hint})</React.Fragment>}
                 </div>
             </div>
             <div className="card__price">{props.price}</div>
